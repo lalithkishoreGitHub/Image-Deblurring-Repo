@@ -25,6 +25,8 @@ if image is None:
     print("No image")
     exit()
 
-noisy_image = speckleNoise(image)
-cv.imwrite('speckled_image.jpg',noisy_image)
+for i in range(0, 200):
+    noisy_image = speckleNoise(image)
+
+cv.imwrite('speckled_image.jpg', noisy_image)
 
